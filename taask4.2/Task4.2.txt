@@ -1,0 +1,36 @@
+1)Primary Key- The primary key is defined as a column (or set of columns)
+               where each value is unique and identifies a single row of 
+               the table.
+  
+  Foreign Key-A foreign key is a column or a set of columns in one table 
+              that references the primary key columns in another table.
+
+
+2)OnetoOne Mapping-
+           . The One-To-One mapping represents a single-valued association
+             where an instance of one entity is associated with an instance
+             of another entity.
+           . In this type of association one instance of source entity can 
+             be mapped atmost one instance of target entity.
+  @JoinColumn-
+           . @JoinColumn is used to specify a column for joining an entity
+             association or element collection.
+           . This annotation indicates that the enclosing entity is the
+             owner of the relationship and the corresponding table has a 
+             foreign key column which references to the table of the
+             non-owning side.
+
+Difference between unidirectional mapping and bidirectional mapping-
+            .If you have a unidirectional @OneToMany association, it means
+             you can only access the relationship from the parent side where
+             the foreign key resides. 
+
+
+            .For the bidirectional @OneToMany association, you can navigate
+             the association in both ways, either from the parent or from the
+             child side.
+
+
+
+
+   
